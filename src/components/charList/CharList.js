@@ -37,8 +37,6 @@ const CharList = ({ onCharSelected }) => {
     setCharEnded((charEnded) => ended);
   };
 
-  const itemRefs = useRef([]);
-
   const focusOnItem = (itemRef) => {
     itemRef.current.classList.add("char__item_selected");
     itemRef.current.focus();
