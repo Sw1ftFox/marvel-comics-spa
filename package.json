@@ -1,6 +1,5 @@
 {
   "name": "12_react_marvel_app",
-  "homepage": "https://sw1ftfox.github.io/marvel-comics-spa",
   "version": "0.1.0",
   "proxy": "https://marvel-server-zeta.vercel.app/",
   "dependencies": {
@@ -19,9 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "sass": "^1.77.2"
   }
 }
