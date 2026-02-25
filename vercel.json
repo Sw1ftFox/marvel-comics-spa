@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/characters/:match*",
+      "destination": "https://marvel-server-zeta.vercel.app/characters/:match*"
+    },
+    {
+      "source": "/comics/:match*",
+      "destination": "https://marvel-server-zeta.vercel.app/comics/:match*"
+    }
+  ]
+}
