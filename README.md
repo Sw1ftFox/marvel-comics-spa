@@ -62,4 +62,5 @@ src/
 - Спиннеры и скелетоны во время загрузки данных.
 
 Демо: [Ссылка на хостинг](https://sw1ftfox.github.io/marvel-comics-spa/)
+
 Репозиторий: [Ссылка на GitHub](https://github.com/Sw1ftFox/marvel-comics-spa)
