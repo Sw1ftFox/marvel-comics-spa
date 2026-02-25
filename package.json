@@ -2,7 +2,6 @@
   "name": "12_react_marvel_app",
   "homepage": "https://sw1ftfox.github.io/marvel-comics-spa",
   "version": "0.1.0",
-  "private": true,
   "proxy": "https://marvel-server-zeta.vercel.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
