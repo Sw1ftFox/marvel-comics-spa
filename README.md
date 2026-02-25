@@ -61,6 +61,6 @@ src/
 - 404 страница для несуществующих маршрутов.
 - Спиннеры и скелетоны во время загрузки данных.
 
-Демо: [Ссылка на хостинг](https://github.com/Sw1ftFox/marvel-comics-spa)
+Демо: [Ссылка на хостинг](https://marvel-comics-spa.vercel.app/)
 
 Репозиторий: [Ссылка на GitHub](https://github.com/Sw1ftFox/marvel-comics-spa)
