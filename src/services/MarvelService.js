@@ -1,4 +1,5 @@
 import { useHttp } from "../hooks/http.hook";
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || '';
 
 const useMarvelService = () => {
   const { loading, request, error, clearError } = useHttp();
@@ -9,13 +10,13 @@ const useMarvelService = () => {
 
   const getAllCharacters = async (offset = _baseOffset) => {
     const response = await request(
-      `/characters?limit=9&offset=${offset}&${_apiKey}`
+      `${BASE_URL}/characters?limit=9&offset=${offset}&${_apiKey}`
     );
     return response.data.results.map(_transformCharacter);
   };
 
   const getCharacter = async (id) => {
-    const response = await request(`/characters/${id}?${_apiKey}`);
+    const response = await request(`${BASE_URL}/characters/${id}?${_apiKey}`);
     return _transformCharacter(response.data.results[0]);
   };
 
@@ -49,13 +50,13 @@ const useMarvelService = () => {
 
   const getAllComics = async (offset = 0) => {
     const response = await request(
-      `/comics?limit=8&offset=${offset}&${_apiKey}`
+      `${BASE_URL}/comics?limit=8&offset=${offset}&${_apiKey}`
     );
     return response.data.results.map(_transformComic);
   };
 
   const getComic = async (comicId) => {
-    const response = await request(`/comics/${comicId}?${_apiKey}`);
+    const response = await request(`${BASE_URL}/comics/${comicId}?${_apiKey}`);
     return _transformComic(response.data.results[0]);
   };
 
